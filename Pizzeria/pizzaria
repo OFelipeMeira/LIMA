@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./BelezaDaPizzaria.css">
+    <title>Felipe's Pizzeria</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&family=Ubuntu&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        
+    </header>
+
+    <nav>
+        <img src="./img/Logo_Pizza.png" alt="LogoPizzeria">
+        <h1>TORRE DE PIZZA</h1>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <img id="banner_fundo"src="./img/background-tree-wood-boards.jpg" alt="img de fundo">
+        <article id="banner">
+            <section>
+                <h1>PEPPERONI PIZZA</h1>
+                <h2>Try one of the most ordered peperoni pizza of the country</p>
+                <h3>cebola, tomate, salame, pimentão, muzzarela, calabresa</h3>
+            </section>
+            <img id="pizza" src="./img/pizza.png" alt="pizza">
+        </article>
+
+        <article id="menu">
+            <section id="menu">
+                <h1>Menu</h1>
+                <p>50+ kind of pizzas for you to chose</p>
+                <p>Try one of our best recipe: Veggie, Peperoni, Meat, Margherita, BBQ Chicken, Hawaiian, Buffalo...</p>
+                <p>Everything in a way just we do</p>
+                <img src="" alt="">
+            </section>
+        </article>
+        
+
+    </main>
+
+</body>
+</html>
