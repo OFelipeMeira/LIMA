@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Fake-Page-background: #7c00b6;
+    --Neomorphism-background:#8b00cc;
+    --Neomorphism-boxshado1: #380052;
+    --Neomorphism-boxshado2: #de00ff;
+}
+
+body{
+    background-color: var(--Neomorphism-background);
+}
+
+header{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Neomorphism-background);
+    padding: 1%;
+}
+
+header a img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    width: 5%;
+    padding: 0.5%;
+    border-radius: 50%;
+    background: var(--background);
+    box-shadow: inset 3px 3px 6px var(--Neomorphism-boxshado1),
+                inset -3px -3px 6px var(--Neomorphism-boxshado2);
+}
+
+#logo:hover{
+    box-shadow:  3px 3px 6px var(--Neomorphism-boxshado1),
+                -3px -3px 6px var(--Neomorphism-boxshado2);
+}
+
+header section{
+    width: 50%;
+    display: flex;
+}
+
+header section a{
+    margin-left: 10%;
+    margin-top: 3%;
+    padding: 1%;
+    color: #fff;
+    font-size: 1.3vw; ;
+    text-decoration: none;
+    
+    border: 1px solid var(--Neomorphism-background);
+    border-radius: 10%;
+
+    background: var(--background);
+    box-shadow: 3px 3px 6px var(--Neomorphism-boxshado1),
+                -3px -3px 6px var(--Neomorphism-boxshado2);
+
+    transition-duration: 1s;
+}
+
+header section a:hover{
+    border-radius: 10%;
+
+    background: var(--background);
+    box-shadow: inset 3px 3px 6px var(--Neomorphism-boxshado1),
+                inset -3px -3px 6px var(--Neomorphism-boxshado2);
+
+    
+}
+
+#MainPhoto{
+    padding-top: 3%;
+    background-image:url(./img/Background.png);
+    filter: invert(1);
+
+    /* Full height */
+    height: fit-content;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: relative;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#MainPhoto h1{
+    margin: 22%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 7vw;
+    color: rgb(122, 253, 0);
+}
+
+#TituloCarousel{
+    background-color: var(--Neomorphism-background);
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    justify-content: center;
+}
+#TituloCarousel h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5vw;
+    color: #ffffff;
+}
+
+/* CARROSSEL */
+.carousel {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+  
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    
+}
+  
+.carousel-item {
+flex: 0 0 19%; /* display 3 items at a time */
+padding: 10px;
+text-align: center;
+background-color: var(--Neomorphism-background);
+text-decoration: none;
+color: #ffffff;
+
+transition: 0.2s;
+
+}
+
+.carousel-item:hover {
+    background-color: var(--Neomorphism-boxshado1);
+}
+
+.carousel-item img {
+max-width: 100%;
+height: auto;
+margin-bottom: 10px;
+}
+
+.carousel-item h3 {
+/*font-size: 20px;*/
+font-size: 1.8vw;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.carousel-item p {
+font-size: 1.5vw;
+margin: 0;
+}
+
+.prev-button,.next-button {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background-color: rgba(0, 0, 0, 0.3);
+color: #ffffff;
+border: none;
+outline: none;
+font-size: 24px;
+padding: 10px 20px;
+cursor: pointer;
+z-index: 1;
+}
+
+.prev-button {
+left: 0;
+}
+
+.next-button {
+right: 0;
+}
+
+.merchan{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+}
+
+.merchan img{
+    margin: 10%;
+    width: 60%;
+}
+
+.merchan h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vw;
+    color: #ffffff;
+}
+
+.merchan p{
+    font-size: 1.5vw;
+    color: #ffffff;
+}
+
+#merchan3{
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#merchan3 img{
+    margin: 10%;
+    width: 60%;
+}
+
+#merchan3 h1{
+    font-size: 3vw;
+    color: #fff;
+}
+
+#merchan3 p{
+    font-size: 1.5vw;
+    color: #fff;
+}
+
+#BuyNow{
+    display: grid;
+    grid-column: 100%;
+
+    justify-items: center;
+    align-items: center;
+}
+
+#BuyNow a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vw;
+    padding: 1%;
+
+    margin: 5%;
+
+    color: #ffffff;
+
+    border-radius: 10px;
+    background: linear-gradient(145deg, #9500da, #7d00b8);
+    box-shadow:  10px 10px 10px var(--Neomorphism-boxshado1),
+                -10px -10px 10px var(--Neomorphism-boxshado2);
+}
+
+#BuyNow a:hover{
+    color: #c2c2c2;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #9500da, #7d00b8);
+    box-shadow: inset 10px 10px 10px var(--Neomorphism-boxshado1),
+                inset -10px -10px 10px var(--Neomorphism-boxshado2);
+}
+
+footer{
+    background-color:var(--Neomorphism-background);
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+}
+
+footer div{
+    margin: 2%;
+    margin-bottom: 5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer a{
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    padding-left: 5%;
+}
+
+footer a:hover{
+    color: #ffffff;
+    background: var(--background);
+    box-shadow: inset 3px 3px 6px var(--Neomorphism-boxshado1),
+                inset -3px -3px 6px var(--Neomorphism-boxshado2);
+}
+
+#local{
+    width: 10%;
+}
+
+footer h1{
+    color: #ffffff;
+    font-size: 2vw;
+}
+
+footer p{
+    font-size: 1vw;
+    font-weight: bold;
+}
