@@ -77,30 +77,37 @@ header section a:hover{
     
 }
 
+
+#labels{
+    display: flex;
+}
+
+
 #Products{
+    border: 1px solid green;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
 }
-
-#a1{
+/*
+.bracelets{
     width: 15px;
     height: 15px;
     background-color: #ff0000;
 }
-#a2{
+.rings{
     width: 15px;
     height: 15px;
     background-color: #00ff15;
 }
-#a3{
+.necklaces{
     width: 15px;
     height: 15px;
     background-color: #0400ff;
 }
+*/
 
-#a1{
-    visibility: hidden;
-}
+
+
 
 footer{
     background-color:var(--Neomorphism-background);
