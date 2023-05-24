@@ -1,5 +1,5 @@
 var checkboxBracelets = document.querySelector('input[name="BRACELETS"]');
-var braceletsClass = document.querySelectorAll(".bracelets");
+var braceletsClass = document.querySelectorAll(".BRACELETS");
 
 checkboxBracelets.addEventListener('change', ()=>{
     if (checkboxBracelets.checked){
@@ -14,7 +14,7 @@ checkboxBracelets.addEventListener('change', ()=>{
 });
 //-----------------------------------------------------------------------//
 var checkboxNecklaces = document.querySelector('input[name="NECKLACES"]');
-var necklacesClass = document.querySelectorAll(".necklaces");
+var necklacesClass = document.querySelectorAll(".NECKLACES");
 
 checkboxNecklaces.addEventListener('change', ()=>{
     if (checkboxNecklaces.checked){
@@ -29,7 +29,7 @@ checkboxNecklaces.addEventListener('change', ()=>{
 });
 //-----------------------------------------------------------------------//
 var checkboxRings = document.querySelector('input[name="RINGS"]');
-var ringsClass = document.querySelectorAll(".rings");
+var ringsClass = document.querySelectorAll(".RINGS");
 
 checkboxRings.addEventListener('change', ()=>{
     if(checkboxRings.checked){

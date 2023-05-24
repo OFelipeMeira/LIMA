@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8b00cc;
+    padding: 1%;
+}
+
+header img{
+    width: 5%;
+    padding: 0.5%;
+    border-radius: 50%;
+    background: #8b00cc;
+    box-shadow: inset 3px 3px 6px #380052,
+                inset -3px -3px 6px #C20BD9;
+}
+
+header section{
+    width: 50%;
+    display: flex;
+}
+
+header section a{
+    margin-left: 10%;
+    margin-top: 3%;
+    padding: 1%;
+    color: #fff;
+    font-size:x-large ;
+    text-decoration: none;
+    border: 1px solid #8b00cc;
+
+    transition-duration: 0.5s;
+}
+
+header section a:hover{
+    background-color:#7c00b6 ;
+    border-bottom: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+    border-radius: 10%;         
+}
+
+#MainPhoto{
+    padding-top: 3%;
+    background-image:url(./img/beck\ graude.jpg);
+
+    /* Full height */
+    height: fit-content;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: relative;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#MainPhoto h1{
+    margin: 22%;
+    text-align: center;
+    font-size: 7vh;
+    color: #fff;
+}
+
+#TituloCarousel{
+    background-color: #8b00cc;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    justify-content: center;
+}
+#TituloCarousel h1{
+    
+    font-size: 2vw;
+    color: #ffffff;
+}
+
+/* CARROSSEL */
+.carousel {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+  
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    
+}
+  
+.carousel-item {
+flex: 0 0 19%; /* display 3 items at a time */
+padding: 10px;
+text-align: center;
+background-color: #8b00cc;
+}
+
+.carousel-item img {
+max-width: 100%;
+height: auto;
+margin-bottom: 10px;
+}
+
+.carousel-item h3 {
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.carousel-item p {
+font-size: 18px;
+margin: 0;
+}
+
+.prev-button,.next-button {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background-color: rgba(0, 0, 0, 0.3);
+color: #fff;
+border: none;
+outline: none;
+font-size: 24px;
+padding: 10px 20px;
+cursor: pointer;
+z-index: 1;
+}
+
+.prev-button {
+left: 0;
+}
+
+.next-button {
+right: 0;
+}

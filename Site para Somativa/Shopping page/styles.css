@@ -4,51 +4,39 @@
 }
 
 :root{
-    --Fake-Page-background: #7c00b6;
+/*    --Fake-Page-background: rgb(124, 0, 182);*/
     --Neomorphism-background:#8b00cc;
-    --Neomorphism-boxshado1: #380052;
-    --Neomorphism-boxshado2: #de00ff;
+    --Neomorphism-boxshado1: rgb(56, 0, 82);
+    --Neomorphism-boxshado2: rgb(222, 0, 255);
 }
 
 body{
-    background-color: var(--Neomorphism-background);
-}
-
+    background-color: var(--Neomorphism-background);}
 header{
 
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--Neomorphism-background);
-    padding: 1%;
-}
-
+    padding: 1%;}
 header a img{
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
-}
-
+    padding: 0;}
 #logo {
     width: 5%;
     padding: 0.5%;
     border-radius: 50%;
     background: var(--background);
     box-shadow: inset 3px 3px 6px var(--Neomorphism-boxshado1),
-                inset -3px -3px 6px var(--Neomorphism-boxshado2);
-}
-
+                inset -3px -3px 6px var(--Neomorphism-boxshado2);}
 #logo:hover{
     box-shadow:  3px 3px 6px var(--Neomorphism-boxshado1),
-                -3px -3px 6px var(--Neomorphism-boxshado2);
-}
-
+                -3px -3px 6px var(--Neomorphism-boxshado2);}
 header section{
     width: 50%;
-    display: flex;
-}
-
+    display: flex;}
 header section a{
     margin-left: 10%;
     margin-top: 3%;
@@ -64,47 +52,139 @@ header section a{
     box-shadow: 3px 3px 6px var(--Neomorphism-boxshado1),
                 -3px -3px 6px var(--Neomorphism-boxshado2);
 
-    transition-duration: 1s;
-}
-
+    transition-duration: 1s;}
 header section a:hover{
     border-radius: 10%;
 
     background: var(--background);
     box-shadow: inset 3px 3px 6px var(--Neomorphism-boxshado1),
-                inset -3px -3px 6px var(--Neomorphism-boxshado2);
+                inset -3px -3px 6px var(--Neomorphism-boxshado2);}
 
-    
+article{
+    width: 80%;
+    margin: auto;
+    border-radius: 50px;
+    background: #8400c2;
+    box-shadow: inset 7px 7px 31px var(--Neomorphism-boxshado1),
+                inset -7px -7px 31px var(--Neomorphism-boxshado2);
+    padding: 1%;
+}
+
+#Title{
+    width: fit-content;
+    margin: auto;
+
+    color: #ffffff;
+    font-size: 2vw;
+
+    text-shadow: 1.5px 1.5px var(--Neomorphism-boxshado2) ;
+}
+
+#labels{
+    display: flex;
+    float: left;
+    width: fit-content;
+    margin-right: 5%;
+    color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.3vw;
+    text-shadow: 1px 1px var(--Neomorphism-boxshado2) ;}
+.labelsDiv{
+    display: flex;
+    margin-right: 5%;}
+.labelsDiv label{
+    margin-left: 5%;}
+
+#Products{
+    margin: auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;}
+
+#Products div{
+    border-radius: 50px;
+    background: var(--Neomorphism-background);
+    box-shadow:  3px 3px 6px var(--Neomorphism-boxshado1),
+                 -1px -1px 6px var(--Neomorphism-boxshado2);
+    padding: 5%;
+    margin: 5%;
+    transition-duration: 0.15s;
+
+    width: 300px;
+    height: 375px;
+}
+#Products div img{
+    width: 100%;
+}
+#Products div h1{
+    margin-left: 2%;
+    color: #ffffff;
+    font-size: 1.3vw;
+    text-shadow: 1px 1px var(--Neomorphism-boxshado2) ;
+}
+#Products div p{
+    margin-right: 2%;
+    float: right;
+    color: #ffffff;
+    font-size: 1vw;
 }
 
 
-#labels{
+
+/* APARECER INPUT DE QUANTIDADE APENAS QUANDO TEM O MOUSE POR CIMA (HOVER)*/
+#Products div section{
+    display: none;
+    position: absolute;
+
+    width: fit-content;
+    height: fit-content;
+    
+    bottom: 0;
+
+/*    justify-content: center;
+    align-items: center;*/
+    flex-direction: column;
+}
+#Products div section label{
+    border: 1px solid red;
+}
+
+#Products div section input{
+    box-shadow:  3px 3px 6px var(--Neomorphism-boxshado1),
+                 -1px -1px 6px var(--Neomorphism-boxshado2);
+    height: 50%;
+    width: 50%;
+    font-size: 1.5vw;
+    margin-left: 20%;
+}
+
+#Products div section button{
+    height: 20%;
+    width: 93%;
+    background-color: var(--Neomorphism-background);
+    margin-top: 1%;
+    border-radius: 20px;
+    box-shadow:  3px 3px 6px var(--Neomorphism-boxshado1),
+    -1px -1px 6px var(--Neomorphism-boxshado2);
+}
+#Products div section img{
+    width: 30%;
+}
+
+
+/*-------HOVERS----------*/
+#Products div:hover{
+    filter: brightness(0.75);
+}
+
+#Products div:hover section{
     display: flex;
 }
 
 
-#Products{
-    border: 1px solid green;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-}
-/*
-.bracelets{
-    width: 15px;
-    height: 15px;
-    background-color: #ff0000;
-}
-.rings{
-    width: 15px;
-    height: 15px;
-    background-color: #00ff15;
-}
-.necklaces{
-    width: 15px;
-    height: 15px;
-    background-color: #0400ff;
-}
-*/
+
 
 
 
@@ -115,15 +195,11 @@ footer{
 
     grid-template-columns: 50% 50%;
     justify-items: center;
-    align-items: center;
-}
-
+    align-items: center;}
 footer div{
     margin: 2%;
     margin-bottom: 5%;
-    font-family: 'Open Sans', sans-serif;
-}
-
+    font-family: 'Open Sans', sans-serif;}
 footer a{
     display: block;
     max-width: 100%;
@@ -133,26 +209,17 @@ footer a{
     color: #000;
     font-size: 1.5vw;
     font-weight: bolder;
-    padding-left: 5%;
-}
-
+    padding-left: 5%;}
 footer a:hover{
     color: #ffffff;
     background: var(--background);
     box-shadow: inset 3px 3px 6px var(--Neomorphism-boxshado1),
-                inset -3px -3px 6px var(--Neomorphism-boxshado2);
-}
-
+                inset -3px -3px 6px var(--Neomorphism-boxshado2);}
 #local{
-    width: 10%;
-}
-
+    width: 10%;}
 footer h1{
     color: #ffffff;
-    font-size: 2vw;
-}
-
+    font-size: 2vw;}
 footer p{
     font-size: 1vw;
-    font-weight: bold;
-}
+    font-weight: bold;}
